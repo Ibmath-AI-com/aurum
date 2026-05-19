@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(PGPASSWORD=\"FdoJ!kR_2026FgTj785Y\\\\$9vT!kR7mQ2Lp\" psql -h 15.135.254.123 -U appuser -d aurumdb -c \"SELECT extname FROM pg_extension;\" -c \"\\\\dt\")",
+      "Bash(where psql *)",
+      "Bash(node -e \"const {Client}=require\\('pg'\\);const c=new Client\\({host:'15.135.254.123',port:5432,user:'appuser',password:'FdoJ!kR_2026FgTj785Y\\\\$9vT!kR7mQ2Lp',database:'aurumdb'}\\);c.connect\\(\\).then\\(\\(\\)=>c.query\\('SELECT extname FROM pg_extension'\\)\\).then\\(r=>{console.log\\('Extensions:',r.rows\\);return c.query\\(\\\\\"SELECT tablename FROM pg_tables WHERE schemaname='public'\\\\\"\\)}\\).then\\(r=>{console.log\\('Tables:',r.rows\\);process.exit\\(0\\)}\\).catch\\(e=>{console.error\\(e.message\\);process.exit\\(1\\)}\\)\")",
+      "Bash(pnpm install *)",
+      "Bash(npm --version)",
+      "PowerShell(pnpm *)",
+      "PowerShell(npm install *)",
+      "PowerShell(pnpm install *)",
+      "PowerShell(pnpm approve-builds *)",
+      "PowerShell(pnpm typecheck *)",
+      "PowerShell(pnpm lint *)",
+      "PowerShell(Stop-Job *)",
+      "Bash(node ../../node_modules/.bin/tsx src/index.ts)",
+      "Bash(curl -s http://localhost:3000/health)",
+      "Bash(kill %1)",
+      "Bash(node ./node_modules/.bin/tsx src/index.ts)",
+      "PowerShell($env:PATH = $env:PATH + \";$env:APPDATA\\\\npm\"; Set-Location \"E:\\\\AI Projects\\\\aurum\\\\packages\\\\api\"; Start-Process -NoNewWindow -FilePath \"cmd.exe\" -ArgumentList \"/c\", \"tsx src/index.ts\" -RedirectStandardOutput \"$env:TEMP\\\\aurum_api.log\" -RedirectStandardError \"$env:TEMP\\\\aurum_api_err.log\"; Start-Sleep -Seconds 6; Invoke-RestMethod -Uri \"http://localhost:3000/health\" -Method GET | ConvertTo-Json)",
+      "PowerShell(Get-Content *)",
+      "PowerShell($env:PATH = $env:PATH + \";$env:APPDATA\\\\npm\"; Set-Location \"E:\\\\AI Projects\\\\aurum\\\\packages\\\\api\"; Start-Process -NoNewWindow -FilePath \"cmd.exe\" -ArgumentList \"/c\", \".\\\\node_modules\\\\.bin\\\\tsx.cmd src/index.ts\" -RedirectStandardOutput \"$env:TEMP\\\\aurum_api.log\" -RedirectStandardError \"$env:TEMP\\\\aurum_api_err.log\"; Start-Sleep -Seconds 7; Invoke-RestMethod -Uri \"http://localhost:3000/health\" -Method GET | ConvertTo-Json)"
+    ]
+  }
+}
